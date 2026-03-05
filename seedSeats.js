@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Seat = require("./Models/Seat");
 
-mongoose.connect("mongodb://localhost:27017/SeatBooking")
+mongoose.connect("mongodb+srv://srikanthsirangi7_db_user:ViWOWWnrxA5EgtR5@cluster0.mcvgvel.mongodb.net/SeatBooking?appName=Cluster0")
     .then(() => console.log("Connected to database"))
     .catch(() => console.log("Error connecting to database"));
 
