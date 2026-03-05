@@ -1,10 +1,10 @@
 const express = require("express");
-const { getAllSeats, createSeats, bookSeat } = require("../Controllers/seatController");
+const seatController = require("../Controllers/seatController");
 
 const router = express.Router();
 
-router.get("/seats", getAllSeats);
-router.post("/seats", createSeats);
-router.post("/book", bookSeat);
+router.get("/seats", seatController.getAllSeats);
+router.post("/seats", seatController.createSeats);
+router.post("/book", seatController.bookSeat);
 
 module.exports = router;
