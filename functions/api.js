@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
   res.json({ message: 'API is running' });
 });
 
-app.use('/api', seatRoutes);
+app.use('/', seatRoutes);
 
 module.exports.handler = serverless(app);
